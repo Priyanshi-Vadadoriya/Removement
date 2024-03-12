@@ -1,0 +1,767 @@
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body{
+font-family: "Montserrat", sans-serif;
+overflow-x: hidden !important;
+scroll-behavior: smooth;
+}
+a{
+  text-decoration: none;
+}
+
+body::-webkit-scrollbar {
+  width: 12px;               /* width of the entire scrollbar */
+}
+body::-webkit-scrollbar-track {
+  background: #F8D333;        /* color of the tracking area */
+}
+body::-webkit-scrollbar-thumb {
+  background-color: #F18988;    /* color of the scroll thumb */
+  border-radius: 20px;       /* roundness of the scroll thumb */
+  border: 3px solid orange;  /* creates padding around scroll thumb */
+}
+
+
+ 
+header{
+ background-image: url(../images/shape1.png),url(../images/shape2.png);
+ background-repeat: no-repeat;
+ background-position: -20px -40px ,100% 0px;
+ background-size: 40%,60%;
+  & ul li{
+      padding-left: 2px; 
+      margin-inline: 20px;
+  }
+  & ul li a{
+      color: #000000 !important;
+  }
+  .btn-remove{
+    border-radius: 32px;
+    padding: 5px 25px;
+    background-color: #19222D;
+    color: #ffffff;
+  }
+  .btn-remove:hover{
+    background-color: white;
+    border: 1px solid white;
+    color: #000000;
+  }
+  .banner-1-info{
+      width: 80%;
+      background-image: url(../images/shape3.png);
+      background-size: 40%;
+      background-repeat: no-repeat;
+      background-position: 0px 40px;
+      animation: slide-up-down 1.5s infinite;
+  }
+
+  .logo{
+      width: 200px;
+  }
+  .banner1-img img{
+      width: 100%;
+      height: 100%;
+  }
+  .banner1-btn{
+      margin-top: 50px;
+      & a{
+          color: #ffffff;
+          background-color: #F18988;
+          padding: 15px 28px;
+          border-radius: 25px;
+          transition: all 0.5s ease-in; 
+      }
+  }
+  .banner1-btn:hover{
+    & a{
+      color: #000000;
+      background-color: #ffffff;
+      border: 2px solid #F18988;
+      
+  }
+}
+  .banner-1-left{
+    display: flex;
+    align-items: center;
+  }
+}   
+
+/* banner2 section css start */
+.banner2-section{
+  .banner2-sec-info{
+      padding: 0px 0px;
+  }
+  .image{
+      width: 80%;
+      height: 90%;
+  }
+  & a{
+      color: #ffffff;
+      background-color: #F18988;
+      padding: 15px 28px;
+      border-radius: 25px;
+      transition: all 0.5s ease-in; 
+  }
+  & a:hover{
+    color: #000000;
+    background-color: #ffffff;
+    border: 2px solid #F18988;
+}
+  & p{
+      margin: 35px 0px 55px 0px;
+  }
+  .banner2-info{
+      max-width: 500px;
+      /* margin: auto; */
+      padding: 20px;
+  }
+  & h2 span{
+    position: relative;
+   
+  }
+  & span::after{
+    content: '';
+    z-index: -1;
+    position: absolute;
+    top: 50%;
+    left: 0%;
+    height: 30%;
+    width: 100%;
+    background-color: yellow;
+  }
+}
+
+/* banner2 section css end */
+
+
+/* banner3 section css start */
+.banner3-section{
+  .banner3-image{
+    position: absolute;
+    z-index: -1;
+    width: 100%;
+  }
+  .atmosphere-slider-section{
+    padding: 137px 0;
+  }
+    
+    .banner3-heading{
+        padding-left: 100px;
+        position: relative;
+        & img{
+            position: absolute;
+            top: -30%;
+            right: 0%;
+        }
+        & h2 span{
+            position: relative;
+           z-index: 0;
+          }
+          & span::after{
+            content: '';
+            z-index: -1;
+            position: absolute;
+            top: 50%;
+            left: 0%;
+            height: 30%;
+            width: 100%;
+            background-color: yellow;
+          }
+    }
+    .banner3-shape-img{
+        width: 200px;
+    }
+    .swiper {
+        width: 100%;
+        height: 100%;
+      }
+  
+      .swiper-slide {
+        font-size: 18px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+  
+      .swiper-slide img {
+        display: block;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+      }
+      p {
+        margin-top: 10px;
+        margin-bottom: 0rem;
+        }
+      .slider-text{
+        font-size: 22px;
+        margin-top: 35px;
+        font-weight: 500;
+      }
+      .slider-info-text{
+        font-size: 20px;
+        font-weight: 300;
+        color: #ffffff;
+      }
+      .next-prev-btn{
+        display: flex;
+        justify-content: end;
+
+        .next,.prev{
+           width: 40px;
+           height: 40px;
+           color: #ffffff;
+           background-color: #0A2621;
+           border-radius: 50%;
+           display: flex;
+            justify-content: center;
+            align-items: center;
+
+        }
+        .prev{
+            background-color: #38514D;
+            margin-inline: 10px;
+        }
+      }
+      .banner3-end-text{
+        & h2.bg {
+            margin: 100px 0px;
+            line-height: 102px;
+            font-weight: 800;
+            text-transform: uppercase;
+            background: url(../images/banner3-end-text-img.png);
+            background-position: center;
+            background-repeat: repeat;
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+         }
+      }
+}
+/* banner3 section css start */
+
+/* banner4 section css start */
+.banner4-section{
+  .banner4-sec-info{
+      padding: 0px 0px;
+  }
+  .image{
+      height: 80%;
+      width: 80%;
+  }
+  & a{
+      color: #ffffff;
+      background-color: #F18988;
+      padding: 15px 28px;
+      border-radius: 25px; 
+      transition: all 0.5s ease;  
+  }
+  & a:hover{
+    color: #000000;
+    background-color: #ffffff;
+    border: 2px solid #F18988;
+}
+  & p{
+      margin: 25px 0px 60px 0px;
+  }
+  .banner4-info{
+      max-width: 550px;
+      margin: auto;
+      padding: 20px;
+  }
+}
+/* banner4 section css end */
+
+/* banner5 section css start */
+.banner5-section{
+  .banner5-sec-info{
+      padding: 0px 0px;
+  }
+  .image{
+      width: 80%;
+      height: 90%;
+  }
+  & a{
+      color: #ffffff;
+      background-color: #F18988;
+      padding: 15px 28px;
+      border-radius: 25px;
+      transition: all 0.5s ease; 
+  }
+  & a:hover{
+    color: #000000;
+    background-color: #ffffff;
+    border: 2px solid #F18988;
+}
+  & p{
+      margin: 35px 0px 55px 0px;
+  }
+  .banner5-info{
+      max-width: 500px;
+      margin: auto;
+      padding: 20px;
+      & h2 span{
+        position: relative;
+       
+      }
+      & span::after{
+        content: '';
+        z-index: -1;
+        position: absolute;
+        top: 50%;
+        left: 0%;
+        height: 30%;
+        width: 100%;
+        background-color: yellow;
+      }
+  }
+}
+/* banner5 section css end */
+
+
+/* banner6 section css start */
+.banner6-section{
+    padding: 80px 0px 50px 0px;
+    & h2 span{
+        position: relative;
+       
+      }
+      & span::after{
+        content: '';
+        z-index: -1;
+        position: absolute;
+        top: 50%;
+        left: 0%;
+        height: 30%;
+        width: 100%;
+        background-color: yellow;
+      }
+    .small-btn{
+        display: inline-block;
+        background-color: #0A2621;
+        border-radius: 57px;
+        padding: 10px 25px;
+        color: #ffffff;
+        margin: 15px 0px;
+      }
+      
+      & a{
+        padding: 15px 30px;
+        border: 2px solid #ffffff;
+        border-radius: 83px;
+        color: #ffffff;
+        position: absolute;
+        bottom: -3%;
+        left: 30%;
+        transition: all 0.5s ease;
+    }
+    .pakage1{
+      background-color: #E28927;
+      
+    .banner6-text{
+        color: #9D5A11;
+        font-weight: bold;
+      } 
+      & a{
+        background-color: #E28927;
+        &:hover{
+          background-color: #9D5A11;
+        }
+      }
+    }
+    .pakage2{
+      background-color: #F07A79;
+      
+    .banner6-text2{
+        color: #C7413F;
+        font-weight: bold;
+      }  
+      & a{
+        background-color: #F07A79;
+        &:hover{
+          background-color: #C7413F;
+        }
+      } 
+    }
+    .pakage3{
+      background-color: #95A789;
+      
+    .banner6-text3{
+        color: #3D542F;
+        font-weight: bold;
+      }  
+      & a{
+        background-color: #95A789;
+        &:hover{
+          background-color: #3D542F;
+        }
+      } 
+    }
+    .card-section{
+        margin-top: 150px;
+        padding: 200px 0px 80px 0px;
+        position: relative;
+    }
+    .banner6-img{
+        height: auto;
+        width: 80%;
+        margin: auto;
+        position: absolute;
+        top: -30%;
+        left: 0%;
+        right: 0%;
+    }
+}
+/* banner6 section css end */
+
+
+/* banner7 section css start */
+.banner7-heading{
+  position: relative;
+  & img{
+    position: absolute;
+    top: 150%;
+    right: 5%;
+  }
+    & h2 span{
+        position: relative;
+       
+      }
+      & span::after{
+        content: '';
+        z-index: -1;
+        position: absolute;
+        top: 50%;
+        left: 0%;
+        height: 30%;
+        width: 100%;
+        background-color: yellow;
+      }
+}
+.banner7-section{
+    padding: 80px 0px;
+  width: 80%;
+  margin: auto;
+  .banner7-sec{
+      padding: 0px 0px;
+  }
+  .image{
+      min-height: 100vh;
+      width: 100%;
+      background: url(../images/banner7-img.png);
+      background-repeat: no-repeat;
+      background-position: right;
+      background-size: contain;
+      display: flex;
+      align-items: center;
+      text-align: center;
+  }
+  .banner7-calculator{
+      padding: 80px 25px 80px 25px;
+      position: relative;
+      & img{
+        position: absolute;
+        top: 20%;
+        right: 10%;
+      }
+  }
+  & p{
+      margin: 15px 0px 60px 0px;
+  }
+  .banner7-btn{
+    margin: 50px 0px 20px 0px;
+      text-align: center;
+      & a{
+        color: #ffffff;
+        background-color: #F18988;
+        padding: 15px 28px;
+        transition: all 0.5s ease-in;
+        border-radius: 25px;
+        &:hover{
+          background-color: #ffffff;
+          color: #F18988;
+          border: 1px solid #F18988;
+        }
+    }
+  }
+  .country{
+    margin-left: 50px;
+  }
+  .para{
+    margin-top: 100px;
+  }
+  .form{
+    margin-left: 40px;
+  }
+  .banner7-date-btn{
+    outline: none;
+    border: none;
+    padding: 10px 20px;
+    border: 1px solid black;
+    margin-left: 20px;
+  }
+  .save-btn{
+    border: none;
+    outline: none;
+    margin-right: 20px;
+    margin-left: auto;
+    border-radius: 7px;
+    padding: 0px 20px;
+    transition: all 0.5s ease;
+    background-color: #F18988;
+    &:hover{
+      background-color: #ffffff;
+      border: 1px solid #F18988;
+      & a{
+        color: #F18988;
+      }
+    }
+    & a{
+        color: #ffffff;
+    }
+  }
+  
+}
+/* banner7 section css end */
+
+
+/* banner8 section css start */
+.banner8-section{
+  .banner8-sec-info{
+      padding: 0px 0px;
+  }
+  .image{
+      width: 70%;
+      height: 90%;
+  }
+  & a{
+      color: #ffffff;
+      background-color: #F18988;
+      padding: 15px 28px;
+      border-radius: 25px;
+  }
+  & p{
+      margin: 35px 0px 55px 0px;
+  }
+  .banner8-info{
+      max-width: 500px;
+      margin: auto;
+      padding: 20px;
+
+      & h2 span{
+        position: relative;
+       
+      }
+      & span::after{
+        content: '';
+        z-index: -1;
+        position: absolute;
+        top: 50%;
+        left: 0%;
+        height: 30%;
+        width: 100%;
+        background-color: yellow;
+      }
+  }
+
+}
+
+/* banner8 section css end */
+
+
+/* footer section css start */
+.footer-section{
+    min-height: 100vh;
+    position: relative;
+    background-image: url(../images/footer-img.png);
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    background-position: center;
+
+    .footer-img2{
+        height: 350px;
+        position: absolute;
+        top: -15%;
+    }
+    .footer-img3{
+        position: absolute;
+        top: 28%;
+        left: 10%;
+    }
+    .footer-logo{
+        width: 200px;
+    }
+    & a{
+        color: #ffffff;
+        margin-right: 30px;
+    }
+    .copyright{
+        margin: 20px 0px;
+        color: #ffffff;
+    }
+    .footer-info{
+        padding-left: 100px;
+        position: absolute;
+        bottom: 0%;
+        & a,p{
+            font-size: 22px;
+            font-weight: semibold;
+        }
+        & h2{
+            margin: 40px 0px;
+            color: #ffffff;
+            line-height: 50px;
+        }
+    }
+}
+
+/* footer section css end */
+
+
+
+
+@media (max-width: 992px) {
+  header{
+      background-size:  500px,50%;
+
+      .banner-1-info {
+          width: 100%;
+          background-position: 60px 30px;
+      }
+  } 
+
+  .banner7-section{
+    width: 100%;
+    
+   
+  }
+  .banner6-section{
+    .card-section{
+        margin-top: 200px;
+    }
+}
+.footer-section{
+    background-size: cover;
+}
+
+
+}
+
+
+@media(max-width:768px)
+{
+    .banner6-section{
+        .card-section{
+            margin-top: 250px;
+        }
+    } 
+    .banner7-heading{
+        & h2 span{
+            position: relative;
+           
+          }
+          & span::after{
+            content: '';
+            z-index: -1;
+            position: absolute;
+            top: 50%;
+            left: 0%;
+            height: 30%;
+            width: 100%;
+            background-color: yellow;
+          }
+    }
+    .banner7-section{
+      .save-btn{
+        margin-right: 0px;
+      }
+      
+    }
+    .banner3-section{   
+        .banner3-heading{
+            padding-left: 10px;
+        }   
+        .banner3-end-text{
+            & h2.bg {
+                margin: 50px 0px;
+                line-height: 50px;
+          }
+    }
+    .banner3-shape-img{
+        width: 100px;
+    }
+
+}
+.atmosphere-slider-section {
+  padding: 0px 0 !important;
+}
+}
+
+@media(max-width:500px)
+{ 
+    .footer-section{
+        .footer-img2{
+            height: 300px;
+            top: -15%;
+        }
+        .footer-img3{
+            width: 50px;
+            top: 25%;
+            left: 20%;
+        }
+        .footer-info{
+            padding-left: 50px;
+        }  
+        & a{
+            display: block;
+        }
+    }
+    .banner7-heading{
+      & h2 span{
+          position: relative;
+         
+        }
+        & span::after{
+          content: '';
+          z-index: -1;
+          position: absolute;
+          top: 50%;
+          left: 0%;
+          height: 30%;
+          width: 100%;
+          background-color: yellow;
+        }
+  }
+  .banner7-section{
+    .image{
+        min-height: 50vh;
+    }
+  }
+
+}
+
+@media(max-width:448px){
+  header{
+      .logo{
+          width: 150px;
+      }
+  } 
+     
+}
+
+
+/* 
+@keyframes slide-up-down{
+    0%{
+        transform: translateY(0);
+    }
+    50%{
+        transform: translateY(10px);
+    }
+    100%{
+        transform: translateY(0);
+    }
+} */
